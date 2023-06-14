@@ -1,4 +1,4 @@
-
+document.addEventListener("submit");
 
 
 let username = document.getElementById("username");
