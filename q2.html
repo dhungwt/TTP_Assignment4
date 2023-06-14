@@ -1,0 +1,30 @@
+<!-- Create an HTML page with a large element on the page that says 
+"Don't hover over me" inside of it. When you hover over the element, 
+send an alert to the user that says, "Hey, I told you not to hover over me!-->
+<html>
+
+<head>
+    <style>
+        #myDiv {
+            border: 5px outset red;
+            background-color: lightblue;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="myDiv"><h1>Don't hover over me</h1></div>
+
+    <script>
+        document.getElementById("myDiv").addEventListener("mouseover", function (event) {
+            alert("Hey, I told you not to hover over me!!");
+        }, false);
+    </script>
+
+
+
+</body>
+
+</html>
